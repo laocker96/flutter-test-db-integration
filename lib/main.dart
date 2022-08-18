@@ -2,7 +2,7 @@ import 'package:cloud_firestore_odm/cloud_firestore_odm.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:test_db/models/user.dart';
-import 'firebase_options.dart';
+import 'firebase_options.dart'; 
 
 void main() async {
   await Firebase.initializeApp(
