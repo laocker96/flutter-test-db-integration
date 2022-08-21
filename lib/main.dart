@@ -2,7 +2,9 @@ import 'package:cloud_firestore_odm/cloud_firestore_odm.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:test_db/models/user.dart';
-import 'firebase_options.dart';  
+import 'package:test_db/myDataTable.dart';
+import 'package:test_db/myPaginatedDataTable.dart';
+import 'firebase_options.dart';
 
 void main() async {
   await Firebase.initializeApp(
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
         title: 'Flutter Demo',
-        home: Scaffold(body: Center(child: UsersList())));
+        home: Scaffold(body: Center(child: MyPaginatedDataTable())));
   }
 }
 
